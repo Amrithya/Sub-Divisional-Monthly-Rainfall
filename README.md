@@ -51,7 +51,16 @@ The final Dense layer has a single unit and uses a linear activation function, i
 The model is compiled with the mean squared error (MSE) loss function and the Adam optimizer, which is a popular choice for optimization.
 
 RMSE is used evaluating the performance of regression models, especially when dealing with continuous numeric predictions
+
+![alt text](https://github.com/Amrithya/Sub-Divisional-Monthly-Rainfall/blob/main/images/root_mean_square_deviation.svg)
+
 ```bash
 rmse_train, train_predict = predict_and_score(model1, train_X, train_Y)
 rmse_test, test_predict = predict_and_score(model1, test_X, test_Y)
 ```
+
+![alt text](https://github.com/Amrithya/Sub-Divisional-Monthly-Rainfall/blob/main/images/rmse.png)
+
+Predition graph
+
+![alt text](https://github.com/Amrithya/Sub-Divisional-Monthly-Rainfall/blob/main/images/download.png)
