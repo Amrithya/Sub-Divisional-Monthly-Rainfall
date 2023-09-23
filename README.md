@@ -1,22 +1,39 @@
 # Sub-Divisional-Monthly-Rainfall
 Data Analysis and prediction of rainfall in sub divisional parts of India with the rainfall data from 1901 to 2017
 
-#Introduction
+Introduction
 Did you know that India is a country with diverse weather conditions? The climate of India consists of a wide range of weather conditions across a vast geographic scale and varied topography. With the diversity in weather conditions, the most anticipated season in India is the monsoon. Rain is of immense importance in India due to its significant impact on various aspects of the country's environment, agriculture, economy, and culture. Here are some key reasons why rain is crucial in India. India heavily depends on agriculture, and hence, rainfall plays a major role in the Indian economy. Rainfall doesn't always bring joy; sometimes, it's miserable. India is highly vulnerable to tropical cyclones in the basin, from the east or the west. On average, 2 or 3 tropical cyclones make landfall in India each year, with about one being a severe tropical cyclone or greater. So, it's very important to study rainfall in India. Here we do a data analysis on the rainfall amount all over the subdivisional parts of India and a predition of rainfall in Tamil Nadu using neural networks to predict the avg rainfall, the neural net is used to create multiple features that helps in predicting the data points with more seasonal variations.
 
-#Packages
+Packages
 As we are trying to implement neural networks, we need Dense, Activation, Dropout, LSTM, we need libraries like TensorFlow/Keras. Installing TensorFlow will give us access to all the imports.
 
 ```bash
-pip install requirement.txt
+pip install numpy
+pip install pandas
+pip install matplotlib
+```
+For Dense, Activation, Dropout , LSTM, Sequential 
+```bash
+pip install tensorflow
+from keras.layers.core import Dense, Activation, Dropout
+from keras.layers.recurrent import LSTM
+from keras.models import Sequential
+
+```
+For mean_squared_error, MinMaxScaler, StandardScaler
+```bash
+pip install scikit-learn
+from sklearn.metrics import mean_squared_error
+from sklearn.preprocessing import MinMaxScaler
+from sklearn.preprocessing import StandardScaler
 ```
 
-#Dataset
+Dataset
 ```bash
 https://data.gov.in/resource/sub-divisional-monthly-rainfall-1901-2017
 ```
 
-#Implementation
+Implementation
 
 We apply the MinMax scaler from sklearn to normalize data in the (0, 1) interval.The purpose of fit_transform is to both "fit" the transformer to the data and then "transform" the data using the learned parameters.
 
